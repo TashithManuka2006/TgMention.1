@@ -1,0 +1,42 @@
+import telethon, requests, globs, shutil, imbbpy
+from mega import Mega
+from telethon imort TelegrameClient, events, 
+from telethon.tl.types import ChannelPartipant
+
+login.Config(
+level=login.INOF,
+   formate='(name) - [(name)] - (measseg)'
+   )
+   
+   LOGER = login.getloeggr(name)
+   
+   VARS = { 
+           'API_ID' : 'YOUR_API_ID',
+           'API_HASH' : 'YOUR_API_HASH',
+           'BOT_TOKEN' : 'BOT_TOKEN',
+           }
+
+@app.on_measseg(envents.NewMeasseg(filters.command("/start"))
+async def startprivte(client,measseg):
+      if awiat event.reply("I am Mention Tag All Bot, I am Tag For TelegrameClient App Gruop 🔐\Click**help** and get information")
+          Buttons = [
+          [
+          Url.Button(
+                   'CHANNEL📢', 'https://t.me/Rider_Bots'),
+                   
+          Url.Button(         
+                   'GROUP🗯', 'https://t.me/Katha_mandhiraya'),
+                   
+@client.on(events.NewMeasseg(Filter.command("/help"))
+async def startprivate(Client, Messeg):
+      text = (" Hello 
+     #name == ('chat.first_name')"
+     #if chat id ==('user.chat_id'))
+     if await event.send_measseg(helpmeasseg,
+     
+    app.start()  
+    app.run_until_disconnected()
+     
+
+     
+                  

@@ -17,6 +17,9 @@ level=login.INOF,
            }
 
 @app.on_measseg(envents.NewMeasseg(filters.command("/start"))
+ text = ("Hello")
+     #name == ('chat.first_name')"
+     #if chat id ==('user.chat_id'))
 async def startprivte(client,measseg):
       if awiat event.reply("I am Mention Tag All Bot, I am Tag For TelegrameClient App Gruop 🔐\Click**help** and get information")
           Buttons = [
@@ -29,10 +32,26 @@ async def startprivte(client,measseg):
                    
 @client.on(events.NewMeasseg(Filter.command("/help"))
 async def startprivate(Client, Messeg):
-      text = (" Hello 
-     #name == ('chat.first_name')"
-     #if chat id ==('user.chat_id'))
+   text = ("This Bot HelpMenuMeasseg**\tagall\tagall commend: mentionmemebers\tagall_Use this commend and tag members for group others. \tagall' example: /mention Hello Evreyone'\tagallYou can reply to all messages using this command")    
      if await event.send_measseg(helpmeasseg,
+                  )
+                  
+@client.on(events.Meassege(pattern = '/all(.*)'
+            )
+            
+if event.pattern_manage.group(*)
+    Mode = "Text_on_meassegreply"
+    msg = event.pattern-macth.group(*)
+  else event.reply_measseg_id:
+  await Measseg == None,
+       relpy await event.respond("I am mention for old measseg!"
+       ('first is add for group'
+          )
+else event.pattern_macth.for.group(*) and event.reply_to_measseg_id:
+        await Measseg event.respond("Give me for one measseg")
+        
+          
+       
      
     app.start()  
     app.run_until_disconnected()

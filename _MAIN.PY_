@@ -49,12 +49,38 @@ if event.pattern_manage.group(*)
           )
 else event.pattern_macth.for.group(*) and event.reply_to_measseg_id:
         await Measseg event.respond("Give me for one measseg")
+else:
+  return await event.respond("__Reply to measseg for me text for mention others__")
+  
+if mode == "text_on_reply"
+   usrnum += 1
+   usrnum = 0
+    usrtxt = ""
+    async for usr in client.iter_participants(event.chat_id):
+    usrnum += 1
+   usretxt += f"[{usre.first_name}](tg://usre?id={usre.id})"
+if usre == 5: 
+    await client send message(event.chat_id, f"{usretxt}\n\n{msg}") 
+    await asyncio.sleep(2)
+        usrnum = 0
+        usrtxt = ""
         
-          
-       
-     
-    app.start()  
-    app.run_until_disconnected()
+        
+        if mode == "text_on_reply":
+    usrename = 0
+    usretxt = ""
+    async for usre in client.iter_participants(event.chat_id):
+      usrenum += 1
+      usretxt += f"[{usre.first_name}](tg://user?id={usr.id}) "
+      if usrenum == 5:
+        await client.send_message(event.chat_id, usrtxt, reply_to=msg)
+        await asyncio.sleep(2)
+        usrenum = 0
+        usretxt = ""
+        
+        
+print(">> BOT STARTED <<")        
+client.run_until_disconnected()
      
 
      
